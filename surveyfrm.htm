@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>survey-form</title>
+    <meta name="keywords" content="Survey,cencus,data,examplesurvey,samplesurvey">
+    <meta name="description" content="sample or example survey form">
+    <meta name="author" content="Raunak">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        .body-purple {
+            background-color: purple;
+        }
+        
+        .heding-design {
+            color: seashell;
+        }
+        
+        .form-effect {
+            background-color: #000000;
+            opacity: 0.6;
+            color: snow;
+            max-width: 45%;
+        }
+    </style>
+</head>
+
+<body class="container-fluid body-purple">
+    <div class="container-fluid heding-design text-lg-center">
+        <h1 id="title">Survey</h1>
+        <!--US1-->
+        <p id="description">-Thank you for participation</p>
+        <!--US2-->
+    </div>
+    <div class="border border-dark shadow-lg p-3 mb-5 container form-effect">
+        <form id="survey-form" action="#location-to-go" method="" class="justify-content">
+            <!--us3-->
+            <div class="container">
+                <div>
+                    <label for="name" id="name-label">Name:</label>
+                    <br>
+                    <input type="text" id="name" name="name" placeholder=" your name" class="container"><br>
+                    <!--us4-->
+
+                    <label for="Email" id="email-label">Email:</label>
+                    <br>
+                    <input type="Email" id="email" name="Email" placeholder="your email address" class="container"><br>
+                    <!--us5 and type attribute for us 6-->
+
+                    <label for="number" id="number-label">Enter your lucky-number(between 1 and 9):</label>
+                    <br>
+                    <input type="number" id="number" name="number" min="1" max="9" placeholder="1-9">
+                    <br>
+                </div>
+                <!--us7,for us8 type attribute,US9 is min and max-->
+                <!--us 10 is te id of above all labels and us 11 is placeholder attribute in input element all above-->
+                <p>Which day you like the most?<br>(dropdown and select one)</p>
+                <input list="dropdown" placeholder="Days">
+                <datalist id="dropdown"> <!--us 12 the id of datalist shall be value in list attribute of input element -->
+                 <option value="monday">
+                 <option value="tuesday">
+                 <option value="wednesday">
+                 <option value="thrusday">
+                 <option value="friday">
+                 <option value="saturday">
+                 <option value="sunday">
+                </datalist>
+                <!--us13 Radiobuttons-->
+                <br>
+                <p>Select your maximum level of study.</p>
+                <input type="radio" id="highschool" name="study" value="highschool" checked>
+                <label for="highschool">Highschool</label><br>
+                <input type="radio" id="Bachlores" name="study" value="Bachlores">
+                <label for="Bachlores">Bachlores</label><br>
+                <input type="radio" id="Masters" name="study" value="Masters">
+                <label for="Masters">Masters</label><br>
+                <input type="radio" id="Doctorate" name="study" value="Doctorate">
+                <label for="Doctorate">Doctorate</label><br>
+                <!--checkbox us14-->
+                <p>Select what do you prefer to drink?</p>
+                <input type="checkbox" id="drink1" name="drink1" value="softdrinks">
+                <label for="drink1"> Softdrinks</label><br>
+                <input type="checkbox" id="drink2" name="drink2" value="water" checked>
+                <label for="drink2"> water</label><br>
+                <input type="checkbox" id="drink3" name="drink3" value="nosugar">
+                <label for="drink3"> No/less sugar drinks</label><br>
+                <input type="checkbox" id="drink4" name="drink4" value="softalcholic">
+                <label for="drink4"> beer or soft alcholic drinks</label><br>
+                <input type="checkbox" id="drink5" name="drink6" value="Harddrinks">
+                <label for="drink5"> Harddrinks</label>
+                <br>
+                <!--us 15-->
+                <p>Express more about the thing you love to do.</p>
+                <textarea name="extras" rows="4" cols="55" class="container-fluid">Enter what you love doing.</textarea><br>
+                <!--us16-->
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+
+
+
+        </form>
+    </div>
+</body>
+
+</html>
